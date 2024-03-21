@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/login.css') }}">
+
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to SDMCET's assistence system</h1>
+    </div>
+    
+    <div class="user-container">
+        <div class="login-text">
+            <h2>Login As:</h2>
+        </div>
+        <div class="user-icon" id="student-icon">
+            <a href="{{ url_for('student') }}">
+                <img src="{{ url_for('static', filename='images/student1.jpg') }}" alt="Student Icon">
+                <p>STUDENT</p>
+            </a>
+        </div>
+        <div class="user-icon" id="teacher-icon">
+            <a href="{{ url_for('teacher') }}">
+                <img src="{{ url_for('static', filename='images/teacher1.jpg') }}" alt="Teacher Icon">
+                <p>TEACHER</p>
+            </a>
+        </div>
+    </div>
+    
+</body>
+</html>

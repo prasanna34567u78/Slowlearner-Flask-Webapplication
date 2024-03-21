@@ -1,0 +1,22 @@
+
+<div class="side-bar">
+
+    <div id="close-btn">
+        <i class="fas fa-times"></i>
+    </div>
+
+    <div class="profile">
+        <img src="{{ url_for('static', filename='images/student.jpg') }}" class="image" alt="student">
+        <h3 class="name">{{student.Name }}</h3>
+        <a href="{{ url_for('profile') }}" class="btn">view profile</a>
+    </div>
+
+    <nav class="navbar">
+        <a href="{{ url_for('home') }}"><i class="fas fa-home"></i><span>home</span></a>
+        <a href="{{ url_for('about') }}"><i class="fas fa-question"></i><span>about</span></a>
+        <a href="{{ url_for('contact') }}"><i class="fas fa-headset"></i><span>contact us</span></a>
+        <a href="{{ url_for('logout') }}"><i class="fas fa-logout"></i><span>Logout</span></a>
+    </nav>
+
+</div>
+<!-- custom js file link  -->
